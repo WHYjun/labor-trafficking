@@ -29,7 +29,7 @@ class DrawerContent extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Name: {this.props.name} </Text>
+        <Text>Name: {Actions.currentScene} </Text>
         <Button onPress={Actions.identify}>Identify</Button>
         {/* <Text>Drawer Content</Text> */}
         {/* <Button onPress={Actions.closeDrawer}>Back</Button>
