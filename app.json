@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "bu-spark-labor-trafficking",
+    "description": " A mobile application to assist law enforcement and first-responders in identifying the signs of labor trafficking",
+    "slug": "bu-spark-labor-trafficking",
+    "privacy": "public",
+    "sdkVersion": "26.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
