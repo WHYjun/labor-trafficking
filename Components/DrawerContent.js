@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "transparent",
-    borderWidth: 2,
+    borderWidth: 2
     // borderColor: "red"
   }
 });
@@ -30,7 +30,36 @@ class DrawerContent extends React.Component {
     return (
       <View style={styles.container}>
         <Text>Name: {Actions.currentScene} </Text>
-        <Button onPress={Actions.identify}>Identify</Button>
+        {Actions.currentScene === "_home" && (
+          <Button onPress={Actions.identify}>Identify</Button>
+        )}
+        {/* Identify */}
+        {Actions.currentScene === "_identify" && (
+          <Button onPress={Actions.identify}>Identification Tool</Button>
+        )}
+        {Actions.currentScene === "_identify" && (
+          <Button onPress={Actions.labortrafficking}>
+            What is labor trafficking?
+          </Button>
+        )}
+        {Actions.currentScene === "_identify" && (
+          <Button onPress={Actions.law}>What is the law?</Button>
+        )}
+        {Actions.currentScene === "_identify" && (
+          <Button onPress={Actions.misconception}>
+            What are common misconceptions?
+          </Button>
+        )}
+        {Actions.currentScene === "_identify" && (
+          <Button onPress={Actions.factpattern}>
+            What are common fact patterns?
+          </Button>
+        )}
+        {Actions.currentScene === "_identify" && (
+          <Button onPress={Actions.statistics}>
+            What are the statistics in MA?
+          </Button>
+        )}
         {/* <Text>Drawer Content</Text> */}
         {/* <Button onPress={Actions.closeDrawer}>Back</Button>
         <Text>Title: {this.props.title}</Text>
